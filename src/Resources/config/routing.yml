@@ -1,0 +1,5 @@
+flutchman_ez_migration_ui_migration_state:
+    path: /migration/state
+    methods: ['GET']
+    defaults:
+        _controller: 'flutchman_ez_migration_ui.migration_controller:stateDisplayAction'
