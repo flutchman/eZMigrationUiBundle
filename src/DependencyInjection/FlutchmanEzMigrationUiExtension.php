@@ -1,6 +1,6 @@
 <?php
 
-namespace Flutchman\eZMigrationAdminUiBundle\DependencyInjection;
+namespace Flutchman\EzMigrationUiBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 
 /**
  * Class FlutchmanEzMigrationUiExtension
- * @package Flutchman\eZMigrationAdminUiBundle\DependencyInjection
+ * @package Flutchman\EzMigrationUiBundle\DependencyInjection
  */
 class FlutchmanEzMigrationUiExtension extends Extension implements PrependExtensionInterface
 {

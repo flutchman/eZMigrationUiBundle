@@ -1,16 +1,15 @@
 <?php
 
-namespace Flutchman\eZMigrationAdminUiBundle\Controller;
+namespace Flutchman\EzMigrationUiBundle\Controller;
 
 use eZ\Bundle\EzPublishCoreBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Kaliop\eZMigrationBundle\API\Value\Migration;
 use Symfony\Component\Translation\TranslatorInterface;
 
-
 /**
  * Class MigrationController
- * @package Flutchman\eZMigrationAdminUiBundle\Controller
+ * @package Flutchman\EzMigrationUiBundle\Controller
  */
 class MigrationController extends Controller
 {

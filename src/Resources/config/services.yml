@@ -1,6 +1,6 @@
 parameters:
-    flutchman_ez_migration_ui.migration_controller.class: Flutchman\eZMigrationAdminUiBundle\Controller\MigrationController
-    flutchman_ez_migration_ui.menu_event_listener.class: Flutchman\eZMigrationAdminUiBundle\EventListener\MenuListener
+    flutchman_ez_migration_ui.migration_controller.class: Flutchman\EzMigrationUiBundle\Controller\MigrationController
+    flutchman_ez_migration_ui.menu_event_listener.class: Flutchman\EzMigrationUiBundle\EventListener\MenuListener
 
 services:
     # Controller
