@@ -18,9 +18,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "Flutchman\\eZMigrationUiBundle\\": "src/",
+            "Flutchman\\eZMigrationUiBundle\\": "src/"
         }
     },
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.2",
         "ezsystems/ezplatform-admin-ui": "^1.5",
