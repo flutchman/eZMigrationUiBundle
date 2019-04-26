@@ -1,0 +1,29 @@
+{
+    "name": "flutchman/ez-migration-ui-bundle",
+    "license": "GPL-2.0",
+    "type": "ezplatform-bundle",
+    "description": "eZ Platform AdminUI extension",
+    "keywords": [
+        "migrations",
+        "database",
+        "ezpublish",
+        "ezplatform",
+        "admin-ui"
+    ],
+    "authors": [
+        {
+            "name": "Alexandre Andrieux",
+            "email": "alexandre.andrieux.pro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Flutchman\\eZMigrationUiBundle\\": "src/",
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ezsystems/ezplatform-admin-ui": "^1.5",
+        "kaliop/ezmigrationbundle": "^5"
+    }
+}
