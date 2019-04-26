@@ -1,0 +1,18 @@
+adminui:
+    migration:
+        menu:
+            label: "Etat des migrations"
+        list:
+            label: "Liste des migrations"
+            columns:
+                name: "Nom"
+                date: "Date"
+                status: "Status"
+        messages:
+            executed: "Exécuté"
+            started: "Exécution lancée"
+            todo: "Non exécuté"
+            skipped: "Passé"
+            partial: "Partiellement exécuté"
+            suspended: "Suspendu"
+            failed: "Echec"
