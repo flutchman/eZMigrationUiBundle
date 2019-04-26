@@ -6,13 +6,12 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
-use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 
 /**
  * Class FlutchmanEzMigrationUiExtension
  * @package Flutchman\EzMigrationUiBundle\DependencyInjection
  */
-class FlutchmanEzMigrationUiExtension extends Extension implements PrependExtensionInterface
+class FlutchmanEzMigrationUiExtension extends Extension
 {
     /**
      *{@inheritdoc}
