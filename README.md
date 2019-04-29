@@ -1,8 +1,8 @@
 # eZMigrationUiBundle
 
-[![Downloads](https://img.shields.io/packagist/dt/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](https://packagist.org/packages/flutchman/ez-migration-ui-bundle)
-[![Latest release](https://img.shields.io/github/release/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](https://github.com/flutchman/ez-migration-ui-bundle/releases)
-[![License](https://img.shields.io/packagist/l/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](LICENSE)
+[![Downloads](https://img.shields.io/packagist/dt/flutchman/eZMigrationUiBundle.svg?style=flat-square)](https://packagist.org/packages/flutchman/ez-migration-ui-bundle)
+[![Latest release](https://img.shields.io/github/release/flutchman/eZMigrationUiBundle.svg?style=flat-square)](https://github.com/flutchman/ez-migration-ui-bundle/releases)
+[![License](https://img.shields.io/packagist/l/flutchman/eZMigrationUiBundle.svg?style=flat-square)](LICENSE)
 
 ## Description
 
