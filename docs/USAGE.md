@@ -11,5 +11,5 @@ For example, in an ezplatform-demo instance the access should look like:
 
 - Display registered project migrations
 - Display migrations locations (hover)
-- Display curretn status
+- Display current status
 - Display migration's latest execution date
