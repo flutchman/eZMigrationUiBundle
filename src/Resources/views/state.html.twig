@@ -23,34 +23,38 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-12">
-                {# Header#}
-                <div class="ez-table-header">
-                    <div class="ez-table-header__headline">{{ 'adminui.migration.list.label'|trans|desc("Migration list") }}</div>
-                </div>
-                {# Proper table #}
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>{{ "adminui.migration.list.columns.name"|trans|desc("Name") }}</th>
-                        <th>{{ "adminui.migration.list.columns.date"|trans|desc("Date") }}</th>
-                        <th class="text-center">{{ "adminui.migration.list.columns.status"|trans|desc("Status") }}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {# Getting migration list items and showing name, status and date #}
-                    {% for migrationItem in migrationList %}
+                {% if migrationList|length > 0 %}
+                    {# Header#}
+                    <div class="ez-table-header">
+                        <div class="ez-table-header__headline">{{ 'adminui.migration.list.label'|trans|desc("Migration list") }}</div>
+                    </div>
+                    {# Proper table #}
+                    <table class="table">
+                        <thead>
                         <tr>
-                            <td data-tooltip="tooltip" title="{{ migrationItem.path }}">{{ migrationItem.name }}</td>
-                            <td>{{ migrationItem.executionDate|localizeddate }}</td>
-                            <td class="text-center py-3">
+                            <th>{{ "adminui.migration.list.columns.name"|trans|desc("Name") }}</th>
+                            <th>{{ "adminui.migration.list.columns.date"|trans|desc("Date") }}</th>
+                            <th class="text-center">{{ "adminui.migration.list.columns.status"|trans|desc("Status") }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {# Getting migration list items and showing name, status and date #}
+                        {% for migrationItem in migrationList %}
+                            <tr>
+                                <td data-tooltip="tooltip" title="{{ migrationItem.path }}">{{ migrationItem.name }}</td>
+                                <td>{{ migrationItem.executionDate|localizeddate }}</td>
+                                <td class="text-center py-3">
                                 <span class="alert alert-{{ migrationItem.verbose.type }}">
                                     {{ migrationItem.verbose.message }}
                                 </span>
-                            </td>
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <div class="alert alert-info">{{ "adminui.migration.list.empty"|trans|desc("") }}</div>
+                {% endif %}
             </div>
         </div>
     </div>

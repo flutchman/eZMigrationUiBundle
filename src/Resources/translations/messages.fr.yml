@@ -3,6 +3,7 @@ adminui:
         menu:
             label: "Etat des migrations"
         list:
+            empty: "Il n'y a pas de migration pour le moment"
             label: "Liste des migrations"
             columns:
                 name: "Nom"

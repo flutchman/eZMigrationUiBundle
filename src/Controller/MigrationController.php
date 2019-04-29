@@ -13,6 +13,9 @@ use Symfony\Component\Translation\TranslatorInterface;
  */
 class MigrationController extends Controller
 {
+    const MSG_INFO = "info";
+    const MSG_WARNING = "warning";
+    const MSG_DANGER = "danger";
     /** @var TranslatorInterface */
     private $translator;
 
@@ -39,43 +42,43 @@ class MigrationController extends Controller
             switch ($migration->status) {
                 case Migration::STATUS_DONE:
                     $status = [
-                        "type" => "info",
+                        "type" => self::MSG_INFO,
                         "message" => $this->translator->trans("adminui.migration.messages.executed", [], "messages")
                     ];
                     break;
                 case Migration::STATUS_STARTED:
                     $status = [
-                        "type" => "warning",
+                        "type" => self::MSG_WARNING,
                         "message" => $this->translator->trans("adminui.migration.messages.started", [], "messages")
                     ];
                     break;
                 case Migration::STATUS_TODO:
                     $status = [
-                        "type" => "danger",
+                        "type" => self::MSG_DANGER,
                         "message" => $this->translator->trans("adminui.migration.messages.todo", [], "messages")
                     ];
                     break;
                 case Migration::STATUS_SKIPPED:
                     $status = [
-                        "type" => "warning",
+                        "type" => self::MSG_WARNING,
                         "message" => $this->translator->trans("adminui.migration.messages.skipped", [], "messages")
                     ];
                     break;
                 case Migration::STATUS_PARTIALLY_DONE:
                     $status = [
-                        "type" => "warning",
+                        "type" => self::MSG_WARNING,
                         "message" => $this->translator->trans("adminui.migration.messages.partial", [], "messages")
                     ];
                     break;
                 case Migration::STATUS_SUSPENDED:
                     $status = [
-                        "type" => "warning",
+                        "type" => self::MSG_WARNING,
                         "message" => $this->translator->trans("adminui.migration.messages.suspended", [], "messages")
                     ];
                     break;
                 case Migration::STATUS_FAILED:
                     $status = [
-                        "type" => "danger",
+                        "type" => self::MSG_DANGER,
                         "message" => $this->translator->trans("adminui.migration.messages.failed", [], "messages")
                     ];
                     break;
