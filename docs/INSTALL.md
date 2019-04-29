@@ -25,9 +25,10 @@ Activate the bundle in `app/AppKernel.php` file by adding it to the `$bundles` a
 public function registerBundles()
 {
     ...
-
+    new Kaliop\eZMigrationBundle\EzMigrationBundle(),
     new Flutchman\EzMigrationUiBundle\FlutchmanEzMigrationUiBundle()
-
+    ...
+    
     return $bundles;
 }
 ```
