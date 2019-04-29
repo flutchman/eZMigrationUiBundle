@@ -1,5 +1,9 @@
 # eZMigrationUiBundle
 
+[![Downloads](https://img.shields.io/packagist/dt/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](https://packagist.org/packages/flutchman/ez-migration-ui-bundle)
+[![Latest release](https://img.shields.io/github/release/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](https://github.com/flutchman/ez-migration-ui-bundle/releases)
+[![License](https://img.shields.io/packagist/l/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](LICENSE)
+
 ## Description
 
 This bundle offer an eZ Platform AdminUI view of current Kaliop eZ-Migration Bundle status.
