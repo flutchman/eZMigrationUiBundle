@@ -2,8 +2,8 @@
 
 ## Requirements
 
-* eZ Platform 2.0+
-* Kaliop/eZMigrationBundle 5.0+
+* eZ Platform `2.0+`
+* Kaliop/eZMigrationBundle `5.0+`
 
 ## Installation steps
 
@@ -48,12 +48,3 @@ Clear the eZ Platform caches with the following command:
 ```bash
 $ php bin/console cache:clear
 ```
-
-### Install assets
-
-Run the following to correctly install assets for admin UI:
-
-```bash
-$ php bin/console assets:install --symlink --relative
-```
-
