@@ -34,7 +34,7 @@ install:
     # Avoid memory issues on composer install
     - echo "memory_limit=-1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
     # Install packages if needed
-    - if [ "${CHECK_CS}" == "1" -o "${PHPUNIT_CONFIG}" != "" ]; then travis_retry composer install --prefer-dist --no-interaction --no-suggest ; fi
+    - if [ "${CHECK_CS}" == "1" ]; then travis_retry composer install --prefer-dist --no-interaction --no-suggest ; fi
     # Prepare Behat environment if needed
     - if [ "${TEST_CMD}" != "" ]; then ./.travis/prepare_ezplatform.sh ; fi
 
