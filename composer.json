@@ -16,15 +16,45 @@
             "email": "alexandre.andrieux.pro@gmail.com"
         }
     ],
+    "support": {
+        "email": "alexandre.andrieux.pro@gmail.com",
+        "source": "https://github.com/flutchman/eZMigrationUiBundle",
+        "docs": "https://github.com/flutchman/eZMigrationUiBundle/tree/master/docs",
+        "issues": "https://github.com/flutchman/eZMigrationUiBundle/issues"
+    },
     "autoload": {
         "psr-4": {
             "Flutchman\\EzMigrationUiBundle\\": "src/"
         }
     },
+    "config": {
+        "process-timeout": 3000,
+        "platform": {
+            "php": "7.1"
+        }
+    },
+    "scripts": {
+        "fix-cs": "php-cs-fixer fix -v --show-progress=estimating",
+        "unit": "paratest -p half -c phpunit.xml --runner=WrapperRunner",
+        "test": [
+            "@unit"
+        ]
+    },
+    "scripts-descriptions": {
+        "fix-cs": "Fix Coding standard issues in current checkout.",
+        "test": "Run all tests (unit & integration, not functional), might not work on Windows."
+    },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.1",
         "ezsystems/ezplatform-admin-ui": "^1.5",
         "kaliop/ezmigrationbundle": "^5"
+    },
+    "extra": {
+        "_ezplatform_branch_for_behat_tests": "master",
+        "thanks": {
+            "name": "flutchman/ez-migration-ui-bundle",
+            "url": "https://github.com/flutchman/eZMigrationUiBundle"
+        }
     }
 }
