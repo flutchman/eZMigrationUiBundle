@@ -37,7 +37,7 @@
         "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
     },
     "scripts-descriptions": {
-        "fix-cs": "Fix Coding standard issues in current checkout.",
+        "fix-cs": "Fix Coding standard issues in current checkout."
     },
     "minimum-stability": "dev",
     "require": {
