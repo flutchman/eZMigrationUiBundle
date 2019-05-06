@@ -1,6 +1,8 @@
 <?php
+
 /**
- * Adding items into Back-Office navigation
+ * @copyright Copyright (C) Flutchman. All rights reserved.
+ * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
 
 namespace Flutchman\EzMigrationUiBundle\EventListener;
@@ -10,8 +12,7 @@ use EzSystems\EzPlatformAdminUi\Menu\MainMenuBuilder;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
- * Class MenuListener
- * @package Flutchman\EzMigrationUiBundle\EventListener
+ * Class MenuListener.
  */
 class MenuListener implements EventSubscriberInterface
 {
