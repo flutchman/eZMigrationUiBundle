@@ -34,15 +34,10 @@
         }
     },
     "scripts": {
-        "fix-cs": "php-cs-fixer fix -v --show-progress=estimating",
-        "unit": "paratest -p half -c phpunit.xml --runner=WrapperRunner",
-        "test": [
-            "@unit"
-        ]
+        "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
     },
     "scripts-descriptions": {
         "fix-cs": "Fix Coding standard issues in current checkout.",
-        "test": "Run all tests (unit & integration, not functional), might not work on Windows."
     },
     "minimum-stability": "dev",
     "require": {
