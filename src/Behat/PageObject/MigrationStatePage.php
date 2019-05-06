@@ -58,11 +58,18 @@ class MigrationStatePage extends Page
         $this->adminLists['Packages']->verifyVisibility();
     }
 
+    /**
+     * @param string $tabName
+     */
     public function verifyMigrationStateTable(string $tabName): void
     {
         $this->migrationStateTable->verifyHeader($tabName);
     }
 
+    /**
+     * @param string $tableName
+     * @param array $records
+     */
     public function verifyMigrationStateRecords(string $tableName, array $records): void
     {
         $this->adminLists[$tableName]->verifyVisibility();

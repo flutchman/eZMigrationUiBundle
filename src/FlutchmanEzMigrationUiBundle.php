@@ -8,6 +8,9 @@ namespace Flutchman\EzMigrationUiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+/**
+ * Class FlutchmanEzMigrationUiBundle.
+ */
 class FlutchmanEzMigrationUiBundle extends Bundle
 {
 }
