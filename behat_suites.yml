@@ -1,0 +1,14 @@
+# This file is meant to be imported from ezplatform's behat.yml.dist.
+# All path are relative to the root ezplatform directory.
+adminui:
+    suites:
+        migration:
+            paths:
+              - '%paths.base%/vendor/flutchman/ez-migration-ui-bundle/features'
+            filters:
+                tags: "@common"
+            contexts:
+                - EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext
+                - EzSystems\EzPlatformAdminUi\Behat\BusinessContext\AuthenticationContext
+                - EzSystems\EzPlatformAdminUi\Behat\BusinessContext\NavigationContext
+                - Flutchman\EzMigrationUiBundle\Behat\BusinessContext\MigrationStateContext
