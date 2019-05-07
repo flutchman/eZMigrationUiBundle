@@ -39,7 +39,6 @@
     },
     "require": {
         "php": ">=7.1",
-        "ezsystems/ezplatform-admin-ui": "~1.5",
         "kaliop/ezmigrationbundle": "^5"
     },
     "scripts": {
@@ -49,7 +48,6 @@
         "fix-cs": "Fix Coding standard issues in current checkout."
     },
     "extra": {
-        "_ezplatform_branch_for_behat_tests": "master",
         "branch-alias": {
             "dev-tmp_ci_branch": "master"
         },
