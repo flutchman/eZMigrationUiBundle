@@ -11,7 +11,7 @@ use Behat\Behat\Hook\Scope\BeforeScenarioScope;
 use EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext;
 
 /**
- * Class BusinessContext
+ * Class BusinessContext.
  */
 abstract class BusinessContext implements Context
 {
