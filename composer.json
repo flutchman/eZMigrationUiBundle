@@ -39,7 +39,7 @@
     },
     "require": {
         "php": ">=7.1",
-        "ezsystems/ezplatform-admin-ui": "^1.5",
+        "ezsystems/ezplatform-admin-ui": "~1.5",
         "kaliop/ezmigrationbundle": "^5"
     },
     "scripts": {
