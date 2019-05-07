@@ -1,4 +1,5 @@
 language: php
+php: 7.2
 
 cache:
     directories:
@@ -17,7 +18,7 @@ matrix:
     include:
         -   name: "Code Style Check"
             env: CHECK_CS=1
-        -   php: 7.1
+        -   php: 7.2
             env: TEST_CMD="./bin/.travis/get_behat_features.sh -p adminui -s migration | bin/fastest -o -v \"bin/behat {} --profile=adminui --suite=migration --no-interaction -vv --strict\""
 
 # test only master, stable branches and pull requests

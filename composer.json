@@ -48,6 +48,7 @@
         "fix-cs": "Fix Coding standard issues in current checkout."
     },
     "extra": {
+        "_ezplatform_branch_for_behat_tests": "master",
         "branch-alias": {
             "dev-tmp_ci_branch": "master"
         },
