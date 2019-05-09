@@ -13,3 +13,9 @@ For example, in an ezplatform-demo instance the access should look like:
 - Display migrations locations (hover)
 - Display current status
 - Display migration's latest execution date
+
+## Tests
+
+This bundle offers a behat test scenario dedicated to this interface.
+To run it, please refer the suites in your `behat.yml` import scope and then run `./bin/.travis/get_behat_features.sh -p adminui -s migration | bin/fastest -o -v "bin/behat {} --profile=adminui --suite=migration --no-interaction -vv --strict"`
+Note: This test will succeed from the moment you will have run at least one migration
