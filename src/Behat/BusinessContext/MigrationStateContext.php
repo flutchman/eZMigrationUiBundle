@@ -9,6 +9,7 @@ namespace Flutchman\EzMigrationUiBundle\Behat\BusinessContext;
 use Behat\Gherkin\Node\TableNode;
 use EzSystems\EzPlatformAdminUi\Behat\PageObject\PageObjectFactory;
 use Flutchman\EzMigrationUiBundle\Behat\PageObject\MigrationStatePage;
+use EzSystems\EzPlatformAdminUi\Behat\BusinessContext\BusinessContext;
 
 /**
  * Class MigrationStateContext.
