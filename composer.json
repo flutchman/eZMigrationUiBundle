@@ -50,7 +50,7 @@
     "extra": {
         "_ezplatform_branch_for_behat_tests": "master",
         "branch-alias": {
-            "dev-tmp_ci_branch": "master"
+            "dev-tmp_ci_branch": "master-dev"
         },
         "thanks": {
             "name": "flutchman/ez-migration-ui-bundle",
