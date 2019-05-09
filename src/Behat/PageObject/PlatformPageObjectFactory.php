@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @copyright Copyright (C) Flutchman. All rights reserved.
+ * @license For full copyright and license information view LICENSE file distributed with this source code.
+ */
 namespace Flutchman\EzMigrationUiBundle\Behat\PageObject;
 
 use EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext;

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @copyright Copyright (C) Flutchman. All rights reserved.
+ * @license For full copyright and license information view LICENSE file distributed with this source code.
+ */
 namespace Flutchman\EzMigrationUiBundle\Behat\PageElement;
 
 use EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext;
@@ -70,7 +74,7 @@ class PlatformElementFactory extends ElementFactory
             case MigrationStateTable::ELEMENT_NAME:
                 return new MigrationStateTable($context, $parameters[0]);
             case AdminList::ELEMENT_NAME:
-                if (!array_key_exists(2, $parameters)) {
+                if (!\array_key_exists(2, $parameters)) {
                     $parameters[2] = null;
                 }
 
@@ -176,11 +180,11 @@ class PlatformElementFactory extends ElementFactory
             case LanguagePicker::ELEMENT_NAME:
                 return new LanguagePicker($context);
             case DateAndTimePopup::ELEMENT_NAME:
-                if (!array_key_exists(0, $parameters)) {
+                if (!\array_key_exists(0, $parameters)) {
                     return new DateAndTimePopup($context);
                 }
 
-                if (!array_key_exists(1, $parameters)) {
+                if (!\array_key_exists(1, $parameters)) {
                     return new DateAndTimePopup($context, $parameters[0]);
                 }
 
