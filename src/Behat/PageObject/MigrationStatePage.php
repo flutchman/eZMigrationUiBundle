@@ -8,9 +8,9 @@ namespace Flutchman\EzMigrationUiBundle\Behat\PageObject;
 
 use EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext;
 use EzSystems\EzPlatformAdminUi\Behat\PageElement\AdminList;
-use EzSystems\EzPlatformAdminUi\Behat\PageElement\ElementFactory;
-use EzSystems\EzPlatformAdminUi\Behat\PageElement\NavLinkTabs;
+use Flutchman\EzMigrationUiBundle\Behat\PageElement\ElementFactory;
 use EzSystems\EzPlatformAdminUi\Behat\PageElement\Tables\SimpleTable;
+use EzSystems\EzPlatformAdminUi\Behat\PageObject\Page;
 use Flutchman\EzMigrationUiBundle\Behat\PageElement\Tables\MigrationStateTable;
 use PHPUnit\Framework\Assert;
 
@@ -27,11 +27,6 @@ class MigrationStatePage extends Page
     public $adminLists;
 
     /**
-     * @var NavLinkTabs
-     */
-    public $navLinkTabs;
-
-    /**
      * @var MigrationStateTable
      */
     public $migrationStateTable;
@@ -46,7 +41,6 @@ class MigrationStatePage extends Page
         parent::__construct($context);
         $this->adminLists['Migration list'] = ElementFactory::createElement($this->context, AdminList::ELEMENT_NAME, 'Migration list', SimpleTable::ELEMENT_NAME, '.ez-main-container');
         $this->migrationStateTable = ElementFactory::createElement($context, MigrationStateTable::ELEMENT_NAME, '.ez-main-container .table');
-        $this->navLinkTabs = ElementFactory::createElement($context, NavLinkTabs::ELEMENT_NAME);
         $this->route = '/admin/migration/state';
         $this->pageTitle = self::PAGE_NAME;
         $this->pageTitleLocator = '.ez-header h1';
@@ -54,7 +48,6 @@ class MigrationStatePage extends Page
 
     public function verifyElements(): void
     {
-        $this->navLinkTabs->verifyVisibility();
         $this->adminLists['Migration list']->verifyVisibility();
     }
 

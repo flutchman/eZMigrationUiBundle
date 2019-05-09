@@ -9,7 +9,7 @@ adminui:
                 tags: "@common"
             contexts:
                 - EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext
-                - EzSystems\EzPlatformAdminUi\Behat\Helper\Hooks
-                - EzSystems\EzPlatformAdminUi\Behat\BusinessContext\AuthenticationContext
+                - Flutchman\EzMigrationUiBundle\Behat\Helper\Hooks
+                - Flutchman\EzMigrationUiBundle\Behat\BusinessContext\AuthenticationContext
                 - EzSystems\EzPlatformAdminUi\Behat\BusinessContext\NavigationContext
                 - Flutchman\EzMigrationUiBundle\Behat\BusinessContext\MigrationStateContext

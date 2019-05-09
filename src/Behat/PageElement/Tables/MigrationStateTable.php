@@ -7,6 +7,7 @@
 namespace Flutchman\EzMigrationUiBundle\Behat\PageElement\Tables;
 
 use EzSystems\EzPlatformAdminUi\Behat\Helper\UtilityContext;
+use EzSystems\EzPlatformAdminUi\Behat\PageElement\Tables\Table;
 use PHPUnit\Framework\Assert;
 
 /**
