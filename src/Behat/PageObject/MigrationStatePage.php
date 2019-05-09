@@ -44,7 +44,7 @@ class MigrationStatePage extends Page
     public function __construct(UtilityContext $context)
     {
         parent::__construct($context);
-        $this->adminLists['Migration list'] = ElementFactory::createElement($this->context, AdminList::ELEMENT_NAME, 'Migration list', SimpleTable::ELEMENT_NAME, '.ez-main-container .ez-table-header');
+        $this->adminLists['Migration list'] = ElementFactory::createElement($this->context, AdminList::ELEMENT_NAME, 'Migration list', SimpleTable::ELEMENT_NAME, '.ez-main-container');
         $this->migrationStateTable = ElementFactory::createElement($context, MigrationStateTable::ELEMENT_NAME, '.ez-main-container .table');
         $this->navLinkTabs = ElementFactory::createElement($context, NavLinkTabs::ELEMENT_NAME);
         $this->route = '/admin/migration/state';
@@ -55,7 +55,7 @@ class MigrationStatePage extends Page
     public function verifyElements(): void
     {
         $this->navLinkTabs->verifyVisibility();
-        $this->adminLists['Packages']->verifyVisibility();
+        $this->adminLists['Migration list']->verifyVisibility();
     }
 
     /**
