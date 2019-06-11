@@ -38,16 +38,18 @@ class MenuListener implements EventSubscriberInterface
 
         // your customizations
         // In this case: adding subitem into "Admin" menu
-        $menu[MainMenuBuilder::ITEM_ADMIN]->addChild(
-            'migration_list',
-            [
-                'label' => 'adminui.migration.menu.label',
-                'route' => 'flutchman_ez_migration_ui_migration_state',
-                'extras' => [
-                    'icon' => 'publish',
-                    'translation_domain' => 'messages',
-                ],
-            ]
-        );
+        if($menu[MainMenuBuilder::ITEM_ADMIN]) {
+            $menu[MainMenuBuilder::ITEM_ADMIN]->addChild(
+                'migration_list',
+                [
+                    'label' => 'adminui.migration.menu.label',
+                    'route' => 'flutchman_ez_migration_ui_migration_state',
+                    'extras' => [
+                        'icon' => 'publish',
+                        'translation_domain' => 'messages',
+                    ],
+                ]
+            );
+        }
     }
 }
