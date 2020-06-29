@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/flutchman/eZMigrationUiBundle.svg?style=flat-square)](https://travis-ci.org/flutchman/eZMigrationUiBundle)
 [![Downloads](https://img.shields.io/packagist/dt/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](https://packagist.org/packages/flutchman/ez-migration-ui-bundle)
 [![Latest release](https://img.shields.io/github/release/flutchman/eZMigrationUiBundle.svg?style=flat-square)](https://github.com/flutchman/eZMigrationUiBundle/releases)
-[![License](https://img.shields.io/packagist/l/flutchman/ez-migration-ui-bundle.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/flutchman/eZMigrationUiBundle?style=flat-square)](LICENSE)
 
 ## Description
 
