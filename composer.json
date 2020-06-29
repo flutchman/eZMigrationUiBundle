@@ -39,7 +39,7 @@
     },
     "require": {
         "php": ">=7.1",
-        "kaliop/ezmigrationbundle": "^5"
+        "kaliop/ezmigrationbundle": "^4"
     },
     "scripts": {
         "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
